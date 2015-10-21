@@ -1,0 +1,35 @@
+#:kivy 1.0.9
+<MegaClock>:
+
+    Image:
+        id: daytime_image
+        source: "image.jpg"
+        top: root.top - 150
+        size: 400,400
+
+    Label:
+        id: time_label
+        font_size:400
+        center_x: root.width / 2
+        top: root.top - 150
+        color: 255, 185, 51 ,1
+        text: root.time
+
+    Label:
+        id: date_label
+        font_size: 128
+        center_x: root.width / 2
+        top: root.top - 450
+        text: root.date
+
+    Label:
+        id: today_label
+        font_size: 128
+        top: root.top - 650
+        text: "Today"
+
+    Label:
+        id: tomorrow_label
+        font_size: 128
+        top: root.top - 650
+        text: "tomorrow"
